@@ -21,6 +21,7 @@ body {
   max-width: 118.4rem;
   width: 100%;
   margin: 0 auto;
+  padding: 0 1.6rem;
 }
 
 .btn {
@@ -33,10 +34,6 @@ body {
   color: #1e0e62;
   font-size: 1.6rem;
   font-weight: 500;
-}
-
-.header {
-  min-height: 10rem;
 }
 
 .header .container {
@@ -53,15 +50,41 @@ body {
   text-decoration: none;
   font-weight: 700;
   font-size: 2.4rem;
-  margin-left: 0.3rem;
   color: #1e0e62;
-}
-
-.header__nav {
-  margin-right: 0.7rem;
 }
 
 .intro {
   background-color: #f1f1f1;
+}
+
+.intro .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
   min-height: 52rem;
+}
+
+.intro__text {
+  width: 42rem;
+}
+
+.intro__title {
+  color: #1e0e62;
+  font-weight: 700;
+  font-size: 4.3rem;
+  margin-bottom: 3.2rem;
+}
+
+.intro__description {
+  color: #15143966;
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+.intro__photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
 }
