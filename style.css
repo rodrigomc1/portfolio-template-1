@@ -8,6 +8,16 @@
   box-sizing: inherit;
 }
 
+:root {
+  --color-white: #fff;
+  --color-primary-main: #1e0e62;
+  --color-primary-light: #482be7;
+  --color-secondary-main: #25dac5;
+  --color-gray-1: #f1f1f1;
+  --color-gray-2: #ebeaed;
+  --color-gray-3: #15143966;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -36,20 +46,20 @@ body {
 .btn--primary {
   padding: 0.9rem 3rem;
   border: none;
-  background-color: #25dac5;
-  color: #fff;
+  background-color: var(--color-secondary-main);
+  color: var(--color-white);
 }
 
 .btn--secondary {
-  border: 0.2rem solid #ebeaed;
-  background-color: #fff;
-  color: #1e0e62;
+  border: 0.2rem solid var(--color-gray-2);
+  background-color: var(--color-white);
+  color: var(--color-primary-main);
 }
 
 .secondary-heading {
   font-size: 4.2rem;
   font-weight: 700;
-  color: #1e0e62;
+  color: var(--color-primary-main);
   margin-bottom: 2.4rem;
   text-align: center;
 }
@@ -65,7 +75,7 @@ body {
 .section-intro__paragraph {
   font-size: 2.2rem;
   font-weight: 500;
-  color: #15143966;
+  color: var(--color-gray-3);
   line-height: 3.2rem;
   text-align: center;
 }
@@ -84,11 +94,11 @@ body {
   text-decoration: none;
   font-weight: 700;
   font-size: 2.4rem;
-  color: #1e0e62;
+  color: var(--color-primary-main);
 }
 
 .hero {
-  background-color: #f1f1f1;
+  background-color: var(--color-gray-1);
 }
 
 .hero .container {
@@ -104,7 +114,7 @@ body {
 }
 
 .hero__title {
-  color: #1e0e62;
+  color: var(--color-primary-main);
   font-weight: 700;
   font-size: 4.3rem;
   margin-bottom: 3.2rem;
@@ -112,7 +122,7 @@ body {
 }
 
 .hero__description {
-  color: #15143966;
+  color: var(--color-gray-3);
   font-size: 2.2rem;
   font-weight: 400;
   line-height: 2.6rem;
@@ -126,7 +136,7 @@ body {
 }
 
 .feature {
-  background-color: #f1f1f1;
+  background-color: var(--color-gray-1);
 }
 
 .feature .container,
@@ -149,7 +159,7 @@ body {
 
 .feature__item h3 {
   font-size: 1.8rem;
-  color: #1e0e62;
+  color: var(--color-primary-main);
   font-weight: 500;
   margin-bottom: 2.1rem;
   line-height: 2.8rem;
@@ -157,13 +167,13 @@ body {
 
 .feature__item p {
   font-size: 1.6rem;
-  color: #15143966;
+  color: var(--color-gray-3);
   font-weight: 400;
   line-height: 2.6rem;
 }
 
 .showcase {
-  background-color: #fff;
+  background-color: var(--color-white);
   min-height: 52rem;
 }
 
@@ -191,7 +201,7 @@ body {
   font-size: 2.2rem;
   font-weight: 500;
   line-height: 3.2rem;
-  color: #1e0e62;
+  color: var(--color-primary-main);
   margin: 2rem 0 1rem 0;
 }
 
@@ -199,5 +209,36 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 2.6rem;
-  color: #15143966;
+  color: var(--color-gray-3);
+}
+
+.contact {
+  background-color: var(--color-gray-1);
+}
+
+.contact .container {
+  padding-top: 16rem;
+  padding-bottom: 16rem;
+}
+
+.contact__email {
+  color: var(--color-primary-light);
+}
+
+.contact .secondary-heading {
+  margin-bottom: 12rem;
+}
+
+.contact__social {
+  display: flex;
+  justify-content: center;
+  gap: 4.6rem;
+}
+
+.contact__social-icon {
+  padding: 0.6rem;
+}
+
+.contact__social img {
+  display: block;
 }
